@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
+}
+html{
+    background-color: #292F33;
+}
+.wrapper{
+    min-width: 340px;
+    max-width: 1200px;
+    width: 80%;
+    display: block;
+    margin: 130px auto;
+}
+img{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    color: rgb(17,17,17);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    padding-top: 30px;
+}
+p{
+    display: block;
+    color: rgb(17,17,17);
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    padding: 20px 0 30px 0;
+}
+.first{
+    background-color: rgb(243, 204, 31);
+    
+}
+.second{
+    background-color: aqua;
+}
+.textBlock{
+    display: block;
+    padding: 0 10px;
+}
+.footer p {
+    color: white;
+    font-size: 13px;
+    line-height: 21px;
+    padding: 35px;
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+    }
+.footer p a{
+    color: rgb(92, 224, 216);
+    
+}
+.footer p a:hover{
+    text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1%;
+        
+    }
+    .one{
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+    }
+    .first{
+        flex-grow: 1;
+    }
+    .two{
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .three{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+    }
+}
+@media only screen and (min-width: 989px) {
+    .one{
+        width: 32.3%;
+    }
+    .two{
+        width: 32.3%;
+        
+    }
+    .three{
+        width: 32.33%;
+        display: flex;
+        flex-direction: column;
+    }
+    .second{
+        flex-basis: 100%;
+    }
+    /* .p2{
+        flex-grow: 1;
+    }
+    .p3{
+        flex-grow: 1;
+    }
+    .p4{
+        flex-grow: 1;
+    } */
+}
+
